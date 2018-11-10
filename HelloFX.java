@@ -26,7 +26,7 @@ public class HelloFX extends Application
     public void build(Stage stage)
     {
         Label messageLabel = new Label("Let's Get that Bread!");
-        messageLabel.setStyle("-fx-font: 100 CALIBIRI");
+        messageLabel.setStyle("-fx-font: 40 ARIAL");
 
         VBox root = new VBox();
         root.getChildren().add(messageLabel);
