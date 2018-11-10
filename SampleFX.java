@@ -11,6 +11,8 @@
 import javaFX.application.Application;
 import javaFX.stage.Stage;
 import javaFX.scene.Scene;
+import javafx.scene.control.*;
+import javafx.scene.layout.*;
 public class SampleFX
 {
 /*
