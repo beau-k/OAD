@@ -8,21 +8,31 @@
  * Class Description:
  *
  */
-import javaFX.application.Application;
-import javaFX.stage.Stage;
-import javaFX.scene.Scene;
+import javafx.application.Application;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.layout.*;
-public class SampleFX
+import javafx.scene.layout.VBox;
+
+public class SampleFX extends Application
 {
-/*
-    button.setOnAction(e->{..});
+ 
+    public void start(Stage stage) 
+    {
+        build(stage); //Building the stage always comes first
+        stage.setTitle(getClass().getName());
+        stage.show();
+    }
+    
+    public void build(Stage stage) 
+    {
+        //Define controls and layout
+        VBox root = new VBox();
 
-    EventHandler(<ActionEvent>);
+        //Set scene and stage
+        Scene scene = new Scene(root, 400, 400);
+        stage.setScene(scene);
 
-    handle(ActionEvent);
-
-    filterTF.addListener((observableValue, oldValue, newValue) -> {...})
-    */
+    }
 }
-
